@@ -11,7 +11,7 @@ reddit_scraper.py
 
 footballdb_scraper.py
  • Connects to letter 'A' of the current player list on https://github.com/scalyreptillian/FantasyFootballScraperwww.footballdb.com
- • Takes the player data table into a text file and cleans it up (leaves square brackets)
+ • Takes the player data table into a text file and cleans it up
 
 database_controller.py
  • Connects to SQLite and creates a table in the database

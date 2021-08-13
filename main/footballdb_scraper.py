@@ -21,6 +21,6 @@ output = open('organizedfootball.txt', 'w')
 input = open('rawfootball.txt').read()
 
 # This regular expression performs the second pass, removing all data between and including the angled brackets.
-output.write(re.sub(r'\<(.*?)>.*?', '', input))
+output.write(re.sub(r'\<(.*?)>.*?|]|\[', '', input))
 
 output.close()
