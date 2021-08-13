@@ -23,5 +23,4 @@ input = open('rawfootball.txt').read()
 # This regular expression performs the second pass, removing all data between and including the angled brackets.
 output.write(re.sub(r'\<(.*?)>.*?', '', input))
 
-input.close()
 output.close()
