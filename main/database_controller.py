@@ -18,9 +18,7 @@ def write_player_data_to_db(cursor):
             
                         
 con = sqlite3.connect('database_file.db')
-
 cur = con.cursor()
-write_player_data_to_db(cur)
 
 cur.execute('''CREATE TABLE IF NOT EXISTS players
             (lastname text,
@@ -28,6 +26,8 @@ cur.execute('''CREATE TABLE IF NOT EXISTS players
             position text,
             team text,
             college text)''')
+
+write_player_data_to_db(cur)            
 
 con.commit()
 con.close()
