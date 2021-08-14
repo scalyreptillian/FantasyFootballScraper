@@ -10,10 +10,15 @@ reddit_scraper.py
  • For basic security, Reddit API login credentials-- client_id, client_secret, and user_agent-- are accessed through a text file
 
 footballdb_scraper.py
- • Connects to letter 'A' of the current player list on https://github.com/scalyreptillian/FantasyFootballScraperwww.footballdb.com
+ • Connects to any letter of the current player list on www.footballdb.com
  • Takes the player data table into a text file and cleans it up
 
 database_controller.py
  • Connects to SQLite and creates a table in the database
+ • Reads the data from organizedfootball.txt into the SQLite database
 
+main.py
+ • Imports controller/scrapers. Creates new database.
+ • Loops through alphabet & collects current player information for each player
+ • Sends the data to the database
 Last updated 8/13/20
