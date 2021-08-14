@@ -21,4 +21,5 @@ main.py
  • Imports controller/scrapers. Creates new database.
  • Loops through alphabet & collects current player information for each player
  • Sends the data to the database
-Last updated 8/13/20
+
+Last updated 8/14/20
